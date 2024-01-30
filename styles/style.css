@@ -1,0 +1,108 @@
+/* Shared Styles */
+:root {
+    --primary-color: #FF42A5;
+    --description-color: #534C64;
+
+}
+
+.max-width {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.gradient-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans";
+}
+
+
+/* Header Styles */
+header {
+    padding: 30px 0px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    display: flex;
+    align-items: center;
+}
+
+.site-title img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.site-title h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.site-title span {
+    color: var(--primary-color);
+}
+
+/* Nav Bar Style */
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: var(--description-color);
+    text-decoration: none;
+
+}
+
+.follow-button {
+    padding: 10px 13px;
+    border-radius: 7px;
+    background-color: rgba(11, 2, 35, 0.10);
+    font-size: 18px;
+}
+
+.follow-button i {
+    margin-left: 10px;
+    color: red;
+}
+
+
+/* Responsive Styles for Mobile and Tablet */
+/* Mobe Responsives */
+@media screen and (max-width: 576px) {
+    .header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
