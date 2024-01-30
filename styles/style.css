@@ -1,6 +1,8 @@
 /* Shared Styles */
 :root {
     --primary-color: #FF42A5;
+    --black-color: #0B0223;
+    --white-color: #ffffff;
     --description-color: #534C64;
 
 }
@@ -23,15 +25,34 @@
     font-family: "Work Sans";
 }
 
+.btn-primary {
+    background-color: var(--primary-color);
+    border-radius: 3rem;
+    padding: 15px 30px;
+    border: none;
+    margin-top: 30px;
+}
+
+.btn-rogue {
+    background-color: #4EC5F7;
+    margin-left: 20px;
+}
+
+.btn-primary a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 
 /* Header Styles */
-header {
+.navbar-container {
     padding: 30px 0px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
 }
 
-.header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,11 +106,65 @@ nav li a {
     color: red;
 }
 
+/* Banner Section Design */
+.banner-background {
+    background-image: url('/images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 55%;
+    /* padding: 100px 180px; */
+
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.banner-items {
+    width: 50%;
+
+}
+
+.banner-getting {
+    color: var(--black-color);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.banner-list {
+    color: var(--description-color);
+}
+
+.banner-list li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.banner-list li i {
+    margin-right: 10px;
+}
+
+.banner-img {
+    width: 100%;
+
+
+}
+
 
 /* Responsive Styles for Mobile and Tablet */
 /* Mobe Responsives */
 @media screen and (max-width: 576px) {
-    .header {
+    .navbar {
         flex-direction: column;
     }
 
@@ -98,10 +173,22 @@ nav li a {
         gap: 10px;
         margin-top: 10px;
     }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-getting {
+        font-size: 1.5rem;
+    }
+
+    .banner-title {
+        font-size: 2.3rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    .header {
+    .navbar {
         flex-direction: column;
         gap: 20px;
     }
