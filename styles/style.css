@@ -4,6 +4,7 @@
     --black-color: #0B0223;
     --white-color: #ffffff;
     --description-color: #534C64;
+    --background-color: #fff9fc;
 
 }
 
@@ -162,7 +163,7 @@ nav li a {
 
 /* We Are Gamer Section */
 .gamer-section {
-    background-color: #fff9fc;
+    background-color: var(--background-color);
     padding: 100px 0px;
 }
 
@@ -191,6 +192,72 @@ nav li a {
     font-size: 1.1rem;
     margin-top: 15px;
 }
+
+/* Careers Section Styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Games Links Section Styles */
+.game-icon-section {
+    padding: 150px 0;
+    background-color: var(--background-color);
+}
+
+.games-links-container,
+.games-icon-badget {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.games-icon-badget {
+    padding: 10px 20px;
+    border: 1px solid #Fff;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.games-icon-badget:hover {
+    border: 1px solid var(--primary-color);
+
+}
+
+.games-icon-badget:hover h3 {
+    color: var(--primary-color);
+}
+
+.games-icon-badget img {
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.games-icon-badget h3 {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
 
 /* Footer Section Styles */
 .footer {
