@@ -8,10 +8,6 @@
 
 }
 
-.hide {
-    display: none;
-}
-
 .max-width {
     max-width: 1140px;
     margin: 0 auto;
@@ -507,7 +503,7 @@ nav li a {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -532,6 +528,9 @@ nav li a {
         margin-top: 10px;
     }
 
+    nav li {
+        margin-right: 0px;
+    }
 
     .banner-container {
         flex-direction: column-reverse;
@@ -742,6 +741,9 @@ nav li a {
         margin-top: 10px;
     }
 
+    nav li {
+        margin-right: 0px;
+    }
 
     .banner-container {
         flex-direction: column-reverse;
